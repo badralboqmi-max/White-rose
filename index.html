@@ -6,146 +6,240 @@
     <title>الوردة البيضاء | خياطة راقية</title>
     <!-- ربط ملف CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- يمكنك إضافة خطوط من Google Fonts لاحقًا مثل Montserrat أو Cairo -->
+    <!-- خطوط جوجل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- أيقونات Font Awesome (للبساطة) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <!-- شريط التنقل (الهيدر) -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#wedding">فساتين زفاف</a></li>
-                <li><a href="#evening">فساتين سهرة</a></li>
-                <li><a href="#kids">أطفال</a></li>
-                <li><a href="#process">كيف نعمل</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
-            </ul>
-            <h1 class="logo">White Rose</h1>
-        </nav>
-
-        <!-- قسم البطل (Hero) -->
-        <div class="hero">
-            <h2>فستان مصمم خصيصًا لأجمل مناسباتك</h2>
-            <p>تصاميم عصرية بلمسة حرفية راقية</p>
-            <a href="#contact" class="btn">احجزي موعدًا</a>
+    <!-- شريط التنقل -->
+    <header class="header">
+        <div class="container header-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="#" class="logo">White Rose</a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#wedding" class="nav-link">فساتين زفاف</a></li>
+                    <li><a href="#evening" class="nav-link">فساتين سهرة</a></li>
+                    <li><a href="#kids" class="nav-link">أطفال</a></li>
+                    <li><a href="#process" class="nav-link">كيف نعمل</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="سلة التسوق">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- قسم البطل (Hero) -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <span class="hero-label">أستوديو خياطة -- منذ 2012</span>
+            <h1 class="hero-title">الوردة البيضاء</h1>
+            <p class="hero-description">فساتين مصممة خصيصاً للأعراس والسهرات والاحتفالات الصغيرة.</p>
+            <div class="hero-buttons">
+                <a href="#wedding" class="btn btn-primary">استكشف المجموعات</a>
+                <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
     <!-- قسم فساتين الزفاف -->
-    <section id="wedding" class="collection">
-        <p class="collection-tag">Collection</p>
-        <h3>فساتين الزفاف</h3>
-        <p class="collection-description">قصات ناعمة مع أقمشة راقية، مصممة لتناسب يومك الكبير.</p>
-        <a href="#" class="browse-link">تصفحي ←</a>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="images/wedding-1.jpg" alt="فستان زفاف بالدانتيل">
-                <h4>فستان ناعم بالدانتيل</h4>
-                <p class="price">١٢٩٠ دولار</p>
+    <section id="wedding" class="section collection">
+        <div class="container">
+            <div class="collection-header">
+                <span class="section-label">Collection</span>
+                <h2 class="section-title">فساتين الزفاف</h2>
+                <p class="section-description">قصات ناعمة، دانتيل رقيق، وأشكال مصممة للتحرك معك. مصممة داخلياً ومنتهية يدوياً.</p>
+                <a href="#" class="collection-link">تصفحي المجموعة <i class="fas fa-arrow-left"></i></a>
             </div>
-            <div class="product-card">
-                <img src="images/wedding-2.jpg" alt="فستان زفاف بقصة مستقيمة">
-                <h4>فستان بقصة مستقيمة</h4>
-                <p class="price">٩٨٠ دولار</p>
-            </div>
-            <div class="product-card">
-                <img src="images/wedding-3.jpg" alt="فستان زفاف مع ذيل طويل">
-                <h4>فستان مع ذيل طويل</h4>
-                <p class="price">١٥٩٠ دولار</p>
-            </div>
+            
+            <div class="products-grid" id="weddingProducts"></div>
         </div>
     </section>
 
     <!-- قسم فساتين السهرة -->
-    <section id="evening" class="collection">
-        <p class="collection-tag">Collection</p>
-        <h3>فساتين السهرة</h3>
-        <p class="collection-description">لمناسباتك الخاصة، فساتين تجمع بين الأناقة والراحة.</p>
-        <a href="#" class="browse-link">تصفحي ←</a>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="images/evening-1.jpg" alt="فستان سهرة حريري">
-                <h4>فستان حريري متوسط الطول</h4>
-                <p class="price">٦٢٠ دولار</p>
+    <section id="evening" class="section collection bg-blush">
+        <div class="container">
+            <div class="collection-header">
+                <span class="section-label">Collection</span>
+                <h2 class="section-title">فساتين السهرة</h2>
+                <p class="section-description">من العشاء الحميم إلى المداخل الرائعة--فساتين تشعرك بالأناقة والتميز.</p>
+                <a href="#" class="collection-link">تصفحي المجموعة <i class="fas fa-arrow-left"></i></a>
             </div>
-            <div class="product-card">
-                <img src="images/evening-2.jpg" alt="فستان سهرة مخمل">
-                <h4>فستان مخمل منسدل</h4>
-                <p class="price">٨٩٠ دولار</p>
-            </div>
-            <div class="product-card">
-                <img src="images/evening-3.jpg" alt="فستان سهرة بكب واحد">
-                <h4>فستان بكب واحد</h4>
-                <p class="price">٧٤٠ دولار</p>
-            </div>
+            
+            <div class="products-grid" id="eveningProducts"></div>
         </div>
     </section>
 
     <!-- قسم فساتين الأطفال -->
-    <section id="kids" class="collection">
-        <p class="collection-tag">Collection</p>
-        <h3>فساتين الأطفال</h3>
-        <p class="collection-description">أقمشة مريحة وتفاصيل ساحرة تسمح لصغيرتك باللعب بحرية.</p>
-        <a href="#" class="browse-link">تصفحي ←</a>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="images/kids-1.jpg" alt="فستان أطفال قطني">
-                <h4>فستان قطني للمناسبات</h4>
-                <p class="price">١٨٠ دولار</p>
+    <section id="kids" class="section collection">
+        <div class="container">
+            <div class="collection-header">
+                <span class="section-label">Collection</span>
+                <h2 class="section-title">فساتين الأطفال</h2>
+                <p class="section-description">قصات مريحة، أقمشة تسمح بالتهوية، وتفاصيل ساحرة--دون أن تعيق اللعب.</p>
+                <a href="#" class="collection-link">تصفحي المجموعة <i class="fas fa-arrow-left"></i></a>
             </div>
-            <div class="product-card">
-                <img src="images/kids-2.jpg" alt="فستان أطفال بالتول">
-                <h4>فستان تول متوسط الطول</h4>
-                <p class="price">٢٢٠ دولار</p>
+            
+            <div class="products-grid" id="kidsProducts"></div>
+        </div>
+    </section>
+
+    <!-- قسم كيفية العمل -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="process-header">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">كيف نعمل</h2>
+                <p class="section-description">عملية بسيطة وشفافة، مصممة لتناسب جدولك.</p>
             </div>
-            <div class="product-card">
-                <img src="images/kids-3.jpg" alt="فستان أطفال بقصّة مستقيمة">
-                <h4>فستان مستقيم بقماش الكتان</h4>
-                <p class="price">١٦٠ دولار</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="step-title">اختاري التصميم</h3>
+                    <p class="step-description">تصفحي المجموعات واحفظي المفضلات لديك.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="step-title">احجزي موعداً للقياس</h3>
+                    <p class="step-description">نؤكد القياسات وخيارات القماش معك.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="step-title">الخياطة</h3>
+                    <p class="step-description">تشطيب يدوي في 2-4 أسابيع مع تحديثات التقدم.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="step-title">التوصيل</h3>
+                    <p class="step-description">الاستلام أو الشحن إلى باب منزلك، جاهز للارتداء.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم "كيف نعمل" (مستوحى من Our Process) -->
-    <section id="process" class="process-section">
-        <p class="collection-tag">Our Process</p>
-        <h3>كيف نعمل</h3>
-        <p class="section-description">عملية بسيطة وشفافة، مصممة لتناسب جدولك.</p>
-        <div class="process-steps">
-            <div class="step">
-                <div class="step-number">١</div>
-                <h4>اختاري التصميم</h4>
-                <p>تصفحي مجموعتنا وأضيفي المفضلة إلى قائمتك.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">٢</div>
-                <h4>احجزي موعداً للقياس</h4>
-                <p>نقوم بتأكيد القياسات وخيارات القماش معك.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">٣</div>
-                <h4>مرحلة الخياطة</h4>
-                <p>تُنهى القطعة يدوياً خلال ٢-٤ أسابيع مع تحديثات دورية.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">٤</div>
-                <h4>التسليم</h4>
-                <p>استلامك أو شحن لباب البيت، جاهز للارتداء.</p>
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">ابدأي طلبك</h2>
+                    <p class="section-description">أخبرينا بما تبحثين عنه. سنرد خلال يوم عمل واحد.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@whiterose.studio</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 014-2282</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>نستقبلك بموعد مسبق</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="اسمك" class="form-input" required>
+                    <input type="email" placeholder="بريدك الإلكتروني" class="form-input" required>
+                    <input type="date" placeholder="تاريخ المناسبة" class="form-input">
+                    <textarea placeholder="رسالتك..." class="form-textarea" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">إرسال الاستفسار</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- تذييل الصفحة (اتصل بنا) -->
-    <footer id="contact">
-        <p class="collection-tag">Get in Touch</p>
-        <h3>ابدأي طلبك</h3>
-        <p class="section-description">أخبرينا بما تبحثين عنه. سنرد خلال يوم عمل واحد.</p>
-        <div class="contact-info">
-            <p><a href="mailto:hello@whiterose.studio">hello@whiterose.studio</a></p>
-            <p>+1 (555) 014-2282</p>
-            <p class="appointment-note">نستقبلك بموعد مسبق</p>
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">White Rose</h3>
+                    <p class="footer-text">خياطة راقية منذ 2012</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#wedding">فساتين زفاف</a>
+                    <a href="#evening">فساتين سهرة</a>
+                    <a href="#kids">فساتين أطفال</a>
+                    <a href="#process">كيف نعمل</a>
+                    <a href="#contact">اتصل بنا</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="بينتيريست"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 White Rose Tailoring. جميع الحقوق محفوظة.</p>
+                <div>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
         </div>
-        <p class="copyright">© 2026 White Rose Tailoring</p>
     </footer>
+
+    <!-- سلة التسوق الجانبية -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">اختياراتك</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <!-- سيتم إضافة العناصر هنا عبر JavaScript -->
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>سلة التسوق فارغة</p>
+                <span>تصفحي مجموعاتنا للعثور على فستانك المثالي</span>
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>المجموع:</span>
+                <span class="total-price" id="cartTotalPrice">$0</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="whatsappOrderBtn">اطلب عبر واتساب</button>
+            <button class="btn btn-outline btn-full" id="clearCartBtn">مسح الاختيارات</button>
+        </div>
+    </div>
+    
+    <!-- طبقة التعتيم -->
+    <div class="overlay" id="overlay"></div>
 
     <!-- ربط ملف JavaScript -->
     <script src="script.js"></script>
