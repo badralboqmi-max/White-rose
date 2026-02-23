@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الوردة البيضاء | خياطة راقية</title>
+    <!-- ربط ملف CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- يمكنك إضافة خطوط من Google Fonts لاحقًا -->
+    <!-- يمكنك إضافة خطوط من Google Fonts لاحقًا مثل Montserrat أو Cairo -->
 </head>
 <body>
     <header>
+        <!-- شريط التنقل (الهيدر) -->
         <nav>
             <ul class="nav-links">
                 <li><a href="#wedding">فساتين زفاف</a></li>
                 <li><a href="#evening">فساتين سهرة</a></li>
                 <li><a href="#kids">أطفال</a></li>
+                <li><a href="#process">كيف نعمل</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
             </ul>
             <h1 class="logo">White Rose</h1>
-        </nav> <!-- تم إغلاق nav مرة واحدة فقط -->
+        </nav>
+
+        <!-- قسم البطل (Hero) -->
         <div class="hero">
             <h2>فستان مصمم خصيصًا لأجمل مناسباتك</h2>
             <p>تصاميم عصرية بلمسة حرفية راقية</p>
@@ -25,48 +30,124 @@
         </div>
     </header>
 
+    <!-- قسم فساتين الزفاف -->
     <section id="wedding" class="collection">
+        <p class="collection-tag">Collection</p>
         <h3>فساتين الزفاف</h3>
+        <p class="collection-description">قصات ناعمة مع أقمشة راقية، مصممة لتناسب يومك الكبير.</p>
+        <a href="#" class="browse-link">تصفحي ←</a>
         <div class="product-grid">
-            <!-- بطاقات المنتجات -->
             <div class="product-card">
-                <img src="images/wedding-1.jpg" alt="فستان زفاف">
+                <img src="images/wedding-1.jpg" alt="فستان زفاف بالدانتيل">
                 <h4>فستان ناعم بالدانتيل</h4>
                 <p class="price">١٢٩٠ دولار</p>
             </div>
-            <!-- أضف المزيد من البطاقات هنا -->
+            <div class="product-card">
+                <img src="images/wedding-2.jpg" alt="فستان زفاف بقصة مستقيمة">
+                <h4>فستان بقصة مستقيمة</h4>
+                <p class="price">٩٨٠ دولار</p>
+            </div>
+            <div class="product-card">
+                <img src="images/wedding-3.jpg" alt="فستان زفاف مع ذيل طويل">
+                <h4>فستان مع ذيل طويل</h4>
+                <p class="price">١٥٩٠ دولار</p>
+            </div>
         </div>
     </section>
 
     <!-- قسم فساتين السهرة -->
     <section id="evening" class="collection">
+        <p class="collection-tag">Collection</p>
         <h3>فساتين السهرة</h3>
+        <p class="collection-description">لمناسباتك الخاصة، فساتين تجمع بين الأناقة والراحة.</p>
+        <a href="#" class="browse-link">تصفحي ←</a>
         <div class="product-grid">
             <div class="product-card">
-                <img src="images/evening-1.jpg" alt="فستان سهرة">
-                <h4>فستان مخمل</h4>
+                <img src="images/evening-1.jpg" alt="فستان سهرة حريري">
+                <h4>فستان حريري متوسط الطول</h4>
+                <p class="price">٦٢٠ دولار</p>
+            </div>
+            <div class="product-card">
+                <img src="images/evening-2.jpg" alt="فستان سهرة مخمل">
+                <h4>فستان مخمل منسدل</h4>
                 <p class="price">٨٩٠ دولار</p>
+            </div>
+            <div class="product-card">
+                <img src="images/evening-3.jpg" alt="فستان سهرة بكب واحد">
+                <h4>فستان بكب واحد</h4>
+                <p class="price">٧٤٠ دولار</p>
             </div>
         </div>
     </section>
 
     <!-- قسم فساتين الأطفال -->
     <section id="kids" class="collection">
+        <p class="collection-tag">Collection</p>
         <h3>فساتين الأطفال</h3>
+        <p class="collection-description">أقمشة مريحة وتفاصيل ساحرة تسمح لصغيرتك باللعب بحرية.</p>
+        <a href="#" class="browse-link">تصفحي ←</a>
         <div class="product-grid">
             <div class="product-card">
-                <img src="images/kids-1.jpg" alt="فستان أطفال">
-                <h4>فستان قطني</h4>
+                <img src="images/kids-1.jpg" alt="فستان أطفال قطني">
+                <h4>فستان قطني للمناسبات</h4>
                 <p class="price">١٨٠ دولار</p>
+            </div>
+            <div class="product-card">
+                <img src="images/kids-2.jpg" alt="فستان أطفال بالتول">
+                <h4>فستان تول متوسط الطول</h4>
+                <p class="price">٢٢٠ دولار</p>
+            </div>
+            <div class="product-card">
+                <img src="images/kids-3.jpg" alt="فستان أطفال بقصّة مستقيمة">
+                <h4>فستان مستقيم بقماش الكتان</h4>
+                <p class="price">١٦٠ دولار</p>
             </div>
         </div>
     </section>
 
+    <!-- قسم "كيف نعمل" (مستوحى من Our Process) -->
+    <section id="process" class="process-section">
+        <p class="collection-tag">Our Process</p>
+        <h3>كيف نعمل</h3>
+        <p class="section-description">عملية بسيطة وشفافة، مصممة لتناسب جدولك.</p>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">١</div>
+                <h4>اختاري التصميم</h4>
+                <p>تصفحي مجموعتنا وأضيفي المفضلة إلى قائمتك.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">٢</div>
+                <h4>احجزي موعداً للقياس</h4>
+                <p>نقوم بتأكيد القياسات وخيارات القماش معك.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">٣</div>
+                <h4>مرحلة الخياطة</h4>
+                <p>تُنهى القطعة يدوياً خلال ٢-٤ أسابيع مع تحديثات دورية.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">٤</div>
+                <h4>التسليم</h4>
+                <p>استلامك أو شحن لباب البيت، جاهز للارتداء.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (اتصل بنا) -->
     <footer id="contact">
-        <p>تواصلي معنا: <a href="mailto:hello@whiterose.studio">hello@whiterose.studio</a></p>
-        <p>© 2026 White Rose Tailoring</p>
+        <p class="collection-tag">Get in Touch</p>
+        <h3>ابدأي طلبك</h3>
+        <p class="section-description">أخبرينا بما تبحثين عنه. سنرد خلال يوم عمل واحد.</p>
+        <div class="contact-info">
+            <p><a href="mailto:hello@whiterose.studio">hello@whiterose.studio</a></p>
+            <p>+1 (555) 014-2282</p>
+            <p class="appointment-note">نستقبلك بموعد مسبق</p>
+        </div>
+        <p class="copyright">© 2026 White Rose Tailoring</p>
     </footer>
 
+    <!-- ربط ملف JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
