@@ -302,23 +302,28 @@
 
   <!-- سكربت الترجمة -->
   <script>
-    let currentLanguage = 'en';
+  // تعريف اللغة الحالية
+  let currentLanguage = 'en';
 
-    function toggleLanguage() {
-      if (currentLanguage === 'en') {
-        setLanguage('ar');
-      } else {
-        setLanguage('en');
-      }
+  // دالة تبديل اللغة (تُستدعى من الزر)
+  window.toggleLanguage = function() {
+    console.log('✅ تم النقر على زر الترجمة');
+    if (currentLanguage === 'en') {
+      setLanguage('ar');
+    } else {
+      setLanguage('en');
     }
+  };
 
-    function setLanguage(lang) {
-      currentLanguage = lang;
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-      document.documentElement.lang = lang;
-      console.log('اللغة الحالية: ' + lang);
-    }
-  </script>
+  // دالة تطبيق اللغة
+  function setLanguage(lang) {
+    console.log('🔄 تغيير اللغة إلى: ' + lang);
+    currentLanguage = lang;
+    document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', lang);
+    // هنا يمكنك إضافة تحديث النصوص لاحقاً
+  }
+</script>
 
   <script>
     const page = {
