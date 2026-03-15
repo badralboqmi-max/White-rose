@@ -357,6 +357,16 @@
       throttle("resize", "optimizedResize");
     })();
     window.addEventListener("optimizedResize", resizePage);
-  </script>
+  </script><script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // ابحث عن أيقونة الترجمة وأضف لها مستمع حدث
+    var translationIcon = document.querySelector('[onclick*="toggleLanguage"]');
+    if (translationIcon) {
+      console.log('✅ تم العثور على أيقونة الترجمة');
+    } else {
+      console.log('❌ لم يتم العثور على أيقونة الترجمة');
+    }
+  });
+</script>
 </body>
 </html>
