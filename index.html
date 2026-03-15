@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage - White Rose</title>
+  <title>Homepage - English</title>
   <style id="reset">
-    /* ... (نفس الأنماط الموجودة في الصفحة الرئيسية) ... */
     *,
     ::before,
     ::after {
@@ -156,11 +155,11 @@
       display: none;
       overflow: hidden;
     }
-    /* المنيو مخفي افتراضياً مع تأثير transition */
+    /* المنيو مخفي افتراضياً مع تأثير fade */
     .menu-overlay {
       position: absolute;
       left: 0;
-      top: 86px; /* أسفل الهيدر مباشرة (ارتفاع الهيدر 86px) */
+      top: 86px; /* أسفل الهيدر مباشرة */
       width: 393px;
       height: 249px;
       opacity: 0;
@@ -177,14 +176,13 @@
 <body>
   <div id="container">
     <div style="width: 393px; height: 1185px; position: absolute; overflow: hidden;">
-      <!-- القسم الرئيسي (الخلفية + المحتوى) -->
       <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; overflow: hidden;">
         <!-- خلفية الصورة -->
-        <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; background: white url('images/homepage-bg.png') no-repeat center center / cover; z-index: 0;"></div>
+        <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; background: white url(images/homepage-bg.png) no-repeat center center / cover; z-index: 0;"></div>
 
         <!-- الهيدر -->
         <div style="width: 393px; height: 86px; position: absolute; left: 0px; top: 0px; z-index: 2;">
-          <!-- أيقونة الترجمة (النسخة العربية) -->
+          <!-- أيقونة الترجمة -->
           <a href="ar/index.html" style="display: block; width: 70px; height: 80px; position: absolute; left: 0px; top: 0px; cursor: pointer;">
             <div style="width: 70px; height: 70px; position: absolute; left: 0px; top: 10px;">
               <div style="width: 50px; height: 50px; position: absolute; left: 10px; top: 10px; overflow: hidden;">
@@ -219,29 +217,118 @@
         <!-- القسم السفلي (قبل الفوتر) -->
         <div style="width: 393px; height: 239px; position: absolute; left: 0px; top: 627px; z-index: 2;">
           <!-- زر واتساب -->
-          <a href="https://wa.me/966500248878?text=مرحباً، أستفسر عن تفصيل فستان" target="_blank" rel="noopener" style="display: block; width: 185px; height: 53px; position: absolute; left: 104px; top: 0px; background: rgb(42, 230, 136); border-radius: 23px; text-decoration: none; color: inherit;">
+          <a href="https://wa.me/966500248878?text=مرحباً، أستفسر عن تفصيل فستان" target="_blank" style="display: block; width: 185px; height: 53px; position: absolute; left: 104px; top: 0px; background: rgb(42, 230, 136); border-radius: 23px; text-decoration: none; color: inherit;">
             <div style="width: 30px; height: 30px; position: absolute; left: 38.5px; top: 11.5px;">
-              <!-- محتوى أيقونة الواتساب (موجود في الكود الأصلي) -->
+              <div style="width: 33px; height: 29.333332px; position: absolute; left: -11px; top: 0.333334px;">
+                <div style="width: 9.041666px; height: 7.104162px; position: absolute; left: 6px; top: 16.22917px;">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGlkPSJWZWN0b3ItMSIgZD0iTTMuODc1IDBDNS4xNjY2NyAxLjI5MTY3IDcuMTA0MTcgMi41ODMzMyA5LjA0MTY3IDMuMjI5MTZDNi40NTgzMyA1LjgxMjUgMi41ODMzMyA3LjEwNDE2IDAgNy4xMDQxNkMyLjU4MzMzIDQuNTIwODMgMy44NzUgMi41ODMzMyAzLjg3NSAwWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" width="9" height="7" style="width: 9.041672px; left: 0px; top: 0px; position: absolute;">
+                </div>
+                <div style="width: 23.25px; height: 17.333332px; position: absolute; left: 9.041666px; top: 6px;">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMyAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3Rvci0yIiBkPSJNNS42NjY2NyAxNS45NTY3QzIuODU1IDE0LjQ5ODMgMSAxMi4wMDE3IDEgOS4xNjY2N0MxIDQuNjUxNjcgNS43MDE2NyAxIDExLjUgMUMxNy4yOTgzIDEgMjIgNC42NTE2NyAyMiA5LjE2NjY3QzIyIDEzLjY4MTcgMTcuMjk4MyAxNy4zMzMzIDExLjUgMTcuMzMzM0M5LjM0MTY3IDE3LjMzMzMgNy4zMzUgMTYuODMxNyA1LjY2NjY3IDE1Ljk1NjdaIiBmaWxsPSJibGFjayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" width="23" height="18" style="width: 23px; left: -1px; top: -1px; position: absolute;">
+                </div>
+              </div>
             </div>
             <div style="width: 72px; height: 15px; position: absolute; left: 68.5px; top: 16px;">
-              <span style="font-size: 15px; font-weight: 700; font-family: 'inria serif'; color: rgb(30,30,30);">WhatsApp</span>
+              <div style="position: absolute; left: 0px; top: 0px; text-align: left; vertical-align: top; display: flex; flex-direction: column; justify-content: flex-start;">
+                <p><span style="font-size: 15px; text-decoration: none; line-height: 100%; font-weight: 700; font-family: 'inria serif'; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">WhatsApp</span></p>
+              </div>
             </div>
           </a>
+
           <!-- القسم الزجاجي -->
-          <div style="width: 393px; height: 130px; position: absolute; left: 50%; transform: translateX(-50%); top: 109px; background: rgba(202, 145, 139, 0.2); backdrop-filter: blur(12px) brightness(1.1); box-shadow: inset 0 0 20px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1); border-radius: 2px; overflow: hidden; box-sizing: border-box;">
-            <!-- النصوص (موجودة في الكود الأصلي) -->
+          <div style="width: 393px; height: 130px; position: absolute; left: 50%; transform: translateX(-50%); top: 109px; background: rgba(202, 145, 139, 0.2); backdrop-filter: blur(12px) brightness(1.1); -webkit-backdrop-filter: blur(12px) brightness(1.1); box-shadow: inset 0 0 20px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1); border-radius: 2px; overflow: hidden; box-sizing: border-box;">
+            <div style="position: absolute; left: 0; width: 100%; top: 15px; text-align: center; padding: 0 10px; box-sizing: border-box;">
+                <p><span style="font-size: 15px; font-weight: 700; font-family: 'inria serif'; color: rgb(30,30,30);">EXPAND YOUR IMAGINATION !!</span></p>
+            </div>
+            <div style="position: absolute; left: 0; width: 100%; top: 45px; text-align: center; padding: 0 10px; box-sizing: border-box;">
+                <p style="margin: 0; padding: 0; line-height: 0.5; margin-bottom: 4px;">
+                    <span style="font-size: 12px; font-weight: 400; font-family: 'inria serif'; color: rgb(30,30,30);">we have specialized</span>
+                </p>
+                <p style="margin: 0; padding: 0; line-height: 0.5; margin-bottom: 4px;">
+                    <span style="font-size: 12px; font-weight: 400; font-family: 'inria serif'; color: rgb(30,30,30);">in creating bespoke dresses for weddings,</span>
+                </p>
+                <p style="margin: 0; padding: 0; line-height: 0.5; margin-bottom: 0;">
+                    <span style="font-size: 12px; font-weight: 400; font-family: 'inria serif'; color: rgb(30,30,30);">evening events, and little celebrations</span>
+                </p>
+            </div>
+            <div style="position: absolute; left: 0; width: 100%; top: 100px; text-align: center; padding: 0 10px; box-sizing: border-box;">
+                <p><span style="font-size: 11px; font-weight: 700; font-family: 'inria serif'; color: rgb(244,5,72);">TAILORING STUDIO - EST. 2017</span></p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- الفوتر -->
       <div style="width: 393px; height: 319px; position: absolute; left: 0px; top: 866px; background: rgb(188, 177, 180); overflow: hidden;">
-        <!-- محتوى الفوتر كما هو في الكود الأصلي -->
+        <div style="width: 373px; height: 80px; position: absolute; left: 10px; top: 19px;">
+          <div style="width: 64px; height: 24px; position: absolute; left: 297px; top: 28px;">
+            <!-- أيقونة إنستغرام -->
+            <a href="https://www.instagram.com/wrose.shop?igsh=MW0xaHUwM3JuNTl6Zw%3D%3D&utm_source=qr" target="_blank" rel="noopener" style="display: block; width: 24px; height: 24px; position: absolute; left: 0px; top: 0px;">
+              <div style="width: 24px; height: 24px; overflow: hidden;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9Ikljb24iIGQ9Ik0xMiAyLjE2M0MxNS4yMDQgMi4xNjMgMTUuNTg0IDIuMTc1IDE2Ljg1IDIuMjMzQzIwLjEwMiAyLjM4MSAyMS42MjEgMy45MjQgMjEuNzY5IDcuMTUyQzIxLjgyNyA4LjQxNyAyMS44MzggOC43OTcgMjEuODM4IDEyLjAwMUMyMS44MzggMTUuMjA2IDIxLjgyNiAxNS41ODUgMjEuNzY5IDE2Ljg1QzIxLjYyIDIwLjA3NSAyMC4xMDUgMjEuNjIxIDE2Ljg1IDIxLjc2OUMxNS41ODQgMjEuODI3IDE1LjIwNiAyMS44MzkgMTIgMjEuODM5QzguNzk2IDIxLjgzOSA4LjQxNiAyMS44MjcgNy4xNTEgMjEuNzY5QzMuODkxIDIxLjYyIDIuMzggMjAuMDcgMi4yMzIgMTYuODQ5QzIuMTc0IDE1LjU4NCAyLjE2MiAxNS4yMDUgMi4xNjIgMTJDMi4xNjIgOC43OTYgMi4xNzUgOC40MTcgMi4yMzIgNy4xNTFDMi4zODEgMy45MjQgMy44OTYgMi4zOCA3LjE1MSAyLjIzMkM4LjQxNyAyLjE3NSA4Ljc5NiAyLjE2MyAxMiAyLjE2M1pNMTIgMEM4Ljc0MSAwIDguMzMzIDAuMDE0IDcuMDUzIDAuMDcyQzIuNjk1IDAuMjcyIDAuMjczIDIuNjkgMC4wNzMgNy4wNTJDMC4wMTQgOC4zMzMgMCA4Ljc0MSAwIDEyQzAgMTUuMjU5IDAuMDE0IDE1LjY2OCAwLjA3MiAxNi45NDhDMC4yNzIgMjEuMzA2IDIuNjkgMjMuNzI4IDcuMDUyIDIzLjkyOEM4LjMzMyAyMy45ODYgOC43NDEgMjQgMTIgMjRDMTUuMjU5IDI0IDE1LjY2OCAyMy45ODYgMTYuOTQ4IDIzLjkyOEMyMS4zMDIgMjMuNzI4IDIzLjczIDIxLjMxIDIzLjkyNyAxNi45NDhDMjMuOTg2IDE1LjY2OCAyNCAxNS4yNTkgMjQgMTJDMjQgOC43NDEgMjMuOTg2IDguMzMzIDIzLjkyOCA3LjA1M0MyMy43MzIgMi42OTkgMjEuMzExIDAuMjczIDE2Ljk0OSAwLjA3M0MxNS42NjggMC4wMTQgMTUuMjU5IDAgMTIgMFpNMTIgNS44MzhDOC41OTcgNS44MzggNS44MzggOC41OTcgNS44MzggMTJDNS44MzggMTUuNDAzIDguNTk3IDE4LjE2MyAxMiAxOC4xNjNDMTUuNDAzIDE4LjE2MyAxOC4xNjIgMTUuNDA0IDE4LjE2MiAxMkMxOC4xNjIgOC41OTcgMTUuNDAzIDUuODM4IDEyIDUuODM4Wk0xMiAxNkM5Ljc5MSAxNiA4IDE0LjIxIDggMTJDOCA5Ljc5MSA5Ljc5MSA4IDEyIDhDMTQuMjA5IDggMTYgOS43OTEgMTYgMTJDMTYgMTQuMjEgMTQuMjA5IDE2IDEyIDE2Wk0xOC40MDYgNC4xNTVDMTcuNjEgNC4xNTUgMTYuOTY1IDQuOCAxNi45NjUgNS41OTVDMTYuOTY1IDYuMzkgMTcuNjEgNy4wMzUgMTguNDA2IDcuMDM1QzE5LjIwMSA3LjAzNSAxOS44NDUgNi4zOSAxOS44NDUgNS41OTVDMTkuODQ1IDQuOCAxOS4yMDEgNC4xNTUgMTguNDA2IDQuMTU1WiIgZmlsbD0iIzFFMUUxRSIvPgo8L3N2Zz4K" width="24" height="24" style="width: 24px; left: 0px; top: 0px; position: absolute;">
+              </div>
+            </a>
+            <!-- أيقونة تيك توك -->
+            <a href="https://www.tiktok.com/@whiterose_2017" target="_blank" rel="noopener" style="display: block; width: 24px; height: 24px; position: absolute; left: 40px; top: 0px;">
+              <div style="width: 24px; height: 24px; overflow: hidden;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi45MjMxIDI0QzE4LjggMjQgMjAuNiAyMy4yNTQ0IDIxLjkyNzIgMjEuOTI3MkMyMy4yNTQ0IDIwLjYgMjQgMTguOCAyNCAxNi45MjMxVjcuMDc2OTJDMjQgNS4yMDAwMSAyMy4yNTQ0IDMuMzk5OTYgMjEuOTI3MiAyLjA3Mjc4QzIwLjYgMC43NDU2MDIgMTguOCAwIDE2LjkyMzEgMEg3LjA3NjkyQzUuMjAwMDEgMCAzLjM5OTk2IDAuNzQ1NjAyIDIuMDcyNzggMi4wNzI3OEMwLjc0NTYwMiAzLjM5OTk2IDAgNS4yMDAwMSAwIDcuMDc2OTJWMTYuOTIzMUMwIDE4LjggMC43NDU2MDIgMjAuNiAyLjA3Mjc4IDIxLjkyNzJDMy4zOTk5NiAyMy4yNTQ0IDUuMjAwMDEgMjQgNy4wNzY5MiAyNEgxNi45MjMxWk0xNC4xMDU4IDQuMzIzNjlDMTQuMDM2MiA0LjExNjI0IDEzLjg5NTEgMy45NDAyNyAxMy43MDc4IDMuODI3MTlDMTMuNTIwNCAzLjcxNDExIDEzLjI5OSAzLjY3MTI3IDEzLjA4MyAzLjcwNjMxQzEyLjg2NjkgMy43NDEzNSAxMi42NzA0IDMuODUxOTkgMTIuNTI4NCA0LjAxODVDMTIuMzg2NCA0LjE4NTAxIDEyLjMwODIgNC4zOTY1NSAxMi4zMDc3IDQuNjE1MzhWMTUuNjkyM0MxMi4zMDc3IDE2LjI0IDEyLjE0NTMgMTYuNzc1NCAxMS44NDEgMTcuMjMwOEMxMS41MzY3IDE3LjY4NjIgMTEuMTA0MiAxOC4wNDExIDEwLjU5ODIgMTguMjUwN0MxMC4wOTIyIDE4LjQ2MDMgOS41MzUzOSAxOC41MTUyIDguOTk4MjEgMTguNDA4M0M4LjQ2MTAzIDE4LjMwMTUgNy45Njc2IDE4LjAzNzcgNy41ODAzMiAxNy42NTA0QzcuMTkzMDQgMTcuMjYzMiA2LjkyOTI5IDE2Ljc2OTcgNi44MjI0NCAxNi4yMzI2QzYuNzE1NTkgMTUuNjk1NCA2Ljc3MDQzIDE1LjEzODYgNi45ODAwMyAxNC42MzI2QzcuMTg5NjIgMTQuMTI2NiA3LjU0NDU2IDEzLjY5NDEgNy45OTk5NiAxMy4zODk4QzguNDU1MzYgMTMuMDg1NSA4Ljk5MDc2IDEyLjkyMzEgOS41Mzg0NiAxMi45MjMxQzkuNzgzMjggMTIuOTIzMSAxMC4wMTgxIDEyLjgyNTggMTAuMTkxMiAxMi42NTI3QzEwLjM2NDMgMTIuNDc5NiAxMC40NjE1IDEyLjI0NDggMTAuNDYxNSAxMkMxMC40NjE1IDExLjc1NTIgMTAuMzY0MyAxMS41MjA0IDEwLjE5MTIgMTEuMzQ3M0MxMC4wMTgxIDExLjE3NDIgOS43ODMyOCAxMS4wNzY5IDkuNTM4NDYgMTEuMDc2OUM4LjYyNTYyIDExLjA3NjkgNy43MzMyOSAxMS4zNDc2IDYuOTc0MjkgMTEuODU0OEM2LjIxNTMgMTIuMzYxOSA1LjYyMzczIDEzLjA4MjcgNS4yNzQ0IDEzLjkyNjFDNC45MjUwOCAxNC43Njk0IDQuODMzNjcgMTUuNjk3NCA1LjAxMTc2IDE2LjU5MjdDNS4xODk4NSAxNy40ODggNS42Mjk0MiAxOC4zMTA0IDYuMjc0ODkgMTguOTU1OUM2LjkyMDM3IDE5LjYwMTQgNy43NDI3NSAyMC4wNDA5IDguNjM4MDUgMjAuMjE5QzkuNTMzMzQgMjAuMzk3MSAxMC40NjEzIDIwLjMwNTcgMTEuMzA0NyAxOS45NTY0QzEyLjE0OCAxOS42MDcgMTIuODY4OSAxOS4wMTU1IDEzLjM3NiAxOC4yNTY1QzEzLjg4MzIgMTcuNDk3NSAxNC4xNTM4IDE2LjYwNTEgMTQuMTUzOCAxNS42OTIzVjcuNjQwNjJDMTUuMDk3OCA4LjUxNjkyIDE2LjQyNzEgOS4yMzA3NyAxOC4xNTM4IDkuMjMwNzdDMTguMzk4NyA5LjIzMDc3IDE4LjYzMzUgOS4xMzM1MiAxOC44MDY2IDguOTYwNDFDMTguOTc5NyA4Ljc4NzMgMTkuMDc2OSA4LjU1MjUxIDE5LjA3NjkgOC4zMDc2OUMxOS4wNzY5IDguMDYyODggMTguOTc5NyA3LjgyODA5IDE4LjgwNjYgNy42NTQ5OEMxOC42MzM1IDcuNDgxODcgMTguMzk4NyA3LjM4NDYyIDE4LjE1MzggNy4zODQ2MkMxNi45NTc1IDcuMzg0NjIgMTYuMDQ4IDYuODkyMzEgMTUuMzczNSA2LjI1MzU0QzE0LjY4NDMgNS41OTg3NyAxNC4yNjgzIDQuODA5ODUgMTQuMTA1OCA0LjMyMzY5WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" width="24" height="24" style="width: 24px; left: 0px; top: 0px; position: absolute;">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div style="width: 373px; height: 182px; position: absolute; left: 10px; top: 118px;">
+          <!-- باقي محتوى الفوتر (سياسة، خصوصية، اتصال) كما هو في الكود الأصلي -->
+          <div style="width: 373px; height: 182px; position: absolute; left: 0px; top: 0px;">
+            <div style="width: 373px; height: 86px; position: absolute; left: 0px; top: 0px;">
+              <div style="width: 373px; height: 26px; position: absolute; left: 0px; top: 0px;">
+                <div style="width: 121px; height: 22px; position: absolute; left: 0px; top: 0px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; vertical-align: top; display: flex; flex-direction: column; justify-content: flex-start;">
+                    <p><span style="font-size: 16px; text-decoration: none; line-height: 139.999998%; font-weight: 700; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Policy&amp; privacy</span></p>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 56px; height: 52px; position: absolute; left: 0px; top: 34px;">
+                <div style="width: 46px; height: 22px; position: absolute; left: 0px; top: 0px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <p><span style="font-size: 16px; text-decoration: none; line-height: 139.999998%; font-weight: 400; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Policy</span></p>
+                  </div>
+                </div>
+                <div style="width: 56px; height: 22px; position: absolute; left: 0px; top: 30px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <p><span style="font-size: 16px; text-decoration: none; line-height: 139.999998%; font-weight: 400; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Privacy</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 373px; height: 72px; position: absolute; left: 0px; top: 110px;">
+              <div style="width: 373px; height: 26px; position: absolute; left: 0px; top: 0px;">
+                <div style="width: 63px; height: 22px; position: absolute; left: 0px; top: 0px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; vertical-align: top; display: flex; flex-direction: column; justify-content: flex-start;">
+                    <p><span style="font-size: 16px; text-decoration: none; line-height: 139.999998%; font-weight: 700; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Contact</span></p>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 249px; height: 38px; position: absolute; left: 0px; top: 34px;">
+                <div style="width: 200px; height: 15px; position: absolute; left: 0px; top: 0px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <p><span style="font-size: 15px; text-decoration: none; letter-spacing: -1%; line-height: 100%; font-weight: 700; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Phone number:  </span><span style="font-size: 15px; text-decoration: none; letter-spacing: -6%; line-height: 100%; font-weight: 400; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">0503962097</span></p>
+                  </div>
+                </div>
+                <div style="width: 249px; height: 15px; position: absolute; left: 0px; top: 23px;">
+                  <div style="position: absolute; left: 0px; top: 0px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+                    <p><span style="font-size: 15px; text-decoration: none; line-height: 100%; font-weight: 700; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">Email: </span><span style="font-size: 15px; text-decoration: none; line-height: 100%; font-weight: 400; font-family: inter; white-space: break-spaces; color: rgb(30, 30, 30); text-transform: none;">whiterose2000e@gmail.com</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- المنيو الجديد (مستورد من Figma) -->
+      <!-- المنيو المستورد من Figma (يظهر عند النقر) -->
       <div id="menu" class="menu-overlay">
         <div style="width: 386px; height: 249px; position: absolute; left: 0px; top: 0px;">
+          <!-- الخلفية الشفافة للقائمة -->
           <div style="width: 309px; height: 242px; position: absolute; left: 0px; top: 3.5px;">
             <div style="width: 309px; height: 242px; position: absolute; left: 0px; top: 0px; background: rgba(236, 231, 230, 0.67); border-radius: 24px;">
               <!-- روابط القائمة -->
@@ -285,7 +372,7 @@
     const menuIcon = document.getElementById('menuIcon');
     const menu = document.getElementById('menu');
 
-    // إضافة مستمع الحدث للنقر
+    // إضافة مستمع الحدث للنقر على الأيقونة
     menuIcon.addEventListener('click', function(event) {
       event.stopPropagation(); // منع انتشار الحدث
       menu.classList.toggle('show');
@@ -299,7 +386,7 @@
     });
   </script>
 
-  <!-- سكربت resize الموجود -->
+  <!-- سكربت resize -->
   <script>
     const page = {
       width: 393,
