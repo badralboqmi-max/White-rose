@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Homepage - English</title>
   <style id="reset">
-    /* ... (الأنماط الأصلية كما هي) ... */
     *,
     ::before,
     ::after {
@@ -162,20 +161,19 @@
   <div id="container">
     <div style="width: 393px; height: 1185px; position: absolute; overflow: hidden;">
       <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; overflow: hidden;">
-        <!-- هذا هو العنصر الذي كانت له خلفية بيضاء – تم إضافة صورة الخلفية -->
-        <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; background: white url(/Home/images/‏homepage-bg.png) no-repeat center center / cover;">
-          <!-- باقي المحتوى -->
-        </div>
-        <!-- باقي الأجزاء التي كانت ضمن الخلفية (التي كانت ضمن نفس div سابقاً) يجب إعادة وضعها هنا، لكن يبدو أن المحتوى كله كان داخل نفس div، لذلك نعيد كتابة المحتوى داخل نفس div -->
-        <div style="width: 393px; height: 86px; position: absolute; left: 0px; top: 0px;">
-          <!-- أيقونة الترجمة (الشعار) -->
-          <div onclick="toggleLanguage()" style="width: 70px; height: 80px; position: absolute; left: 0px; top: 0px; cursor: pointer;">
+        <!-- خلفية الصورة (تم تعديل المسار) -->
+        <div style="width: 393px; height: 866px; position: absolute; left: 0px; top: 0px; background: white url(/Home/images/‏homepage-bg.png) no-repeat center center / cover; z-index: 0;"></div>
+
+        <!-- الهيدر -->
+        <div style="width: 393px; height: 86px; position: absolute; left: 0px; top: 0px; z-index: 2;">
+          <!-- أيقونة الترجمة (الآن رابط للنسخة العربية) -->
+          <a href=/Home/ar/Index.html.ar.html style="display: block; width: 70px; height: 80px; position: absolute; left: 0px; top: 0px; cursor: pointer;">
             <div style="width: 70px; height: 70px; position: absolute; left: 0px; top: 10px;">
               <div style="width: 50px; height: 50px; position: absolute; left: 10px; top: 10px; overflow: hidden;">
                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA0MiA0MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9Imljb24iIGQ9Ik0yMC44MzMzIDQxLjY2NjdMMTguNzUgMzUuNDE2N0g0LjE2NjY3QzMuMDIwODMgMzUuNDE2NyAyLjAzOTkzIDM1LjAwODcgMS4yMjM5NiAzNC4xOTI3QzAuNDA3OTg2IDMzLjM3NjcgMCAzMi4zOTU4IDAgMzEuMjVWNC4xNjY2N0MwIDMuMDIwODMgMC40MDc5ODYgMi4wMzk5MyAxLjIyMzk2IDEuMjIzOTZDMi4wMzk5MyAwLjQwNzk4NiAzLjAyMDgzIDAgNC4xNjY2NyAwSDE2LjY2NjdMMTguNDg5NiA2LjI1SDM3LjVDMzguNzE1MyA2LjI1IDM5LjcxMzUgNi42NDA2MiA0MC40OTQ4IDcuNDIxODdDNDEuMjc2IDguMjAzMTIgNDEuNjY2NyA5LjIwMTM5IDQxLjY2NjcgMTAuNDE2N1YzNy41QzQxLjY2NjcgMzguNjQ1OCA0MS4yNzYgMzkuNjI2NyA0MC40OTQ4IDQwLjQ0MjdDMzkuNzEzNSA0MS4yNTg3IDM4LjcxNTMgNDEuNjY2NyAzNy41IDQxLjY2NjdIMjAuODMzM1pNMTAuNzI5MiAyNi4yNUMxMy4xMjUgMjYuMjUgMTUuMDk1NSAyNS40Nzc0IDE2LjY0MDYgMjMuOTMyM0MxOC4xODU4IDIyLjM4NzIgMTguOTU4MyAyMC4zODE5IDE4Ljk1ODMgMTcuOTE2N0MxOC45NTgzIDE3LjYzODkgMTguOTQ5NyAxNy4zODcyIDE4LjkzMjMgMTcuMTYxNUMxOC45MTQ5IDE2LjkzNTggMTguODcxNSAxNi43MDE0IDE4LjgwMjEgMTYuNDU4M0gxMC41NzI5VjE5LjY4NzVIMTUuMjA4M0MxNC45MzA2IDIwLjY1OTcgMTQuNDAxIDIxLjQxNDkgMTMuNjE5OCAyMS45NTMxQzEyLjgzODUgMjIuNDkxMyAxMS44OTI0IDIyLjc2MDQgMTAuNzgxMiAyMi43NjA0QzkuNDI3MDggMjIuNzYwNCA4LjI2Mzg5IDIyLjI3NDMgNy4yOTE2NyAyMS4zMDIxQzYuMzE5NDQgMjAuMzI5OSA1LjgzMzMzIDE5LjEzMTkgNS44MzMzMyAxNy43MDgzQzUuODMzMzMgMTYuMjg0NyA2LjMxOTQ0IDE1LjA4NjggNy4yOTE2NyAxNC4xMTQ2QzguMjYzODkgMTMuMTQyNCA5LjQyNzA4IDEyLjY1NjIgMTAuNzgxMiAxMi42NTYyQzExLjQwNjIgMTIuNjU2MiAxMS45OTY1IDEyLjc2OTEgMTIuNTUyMSAxMi45OTQ4QzEzLjEwNzYgMTMuMjIwNSAxMy42MTExIDEzLjU1OSAxNC4wNjI1IDE0LjAxMDRMMTYuNjE0NiAxMS41NjI1QzE1Ljg4NTQgMTAuNzk4NiAxNS4wMDg3IDEwLjIwODMgMTMuOTg0NCA5Ljc5MTY3QzEyLjk2MDEgOS4zNzUgMTEuODc1IDkuMTY2NjcgMTAuNzI5MiA5LjE2NjY3QzguNDAyNzggOS4xNjY2NyA2LjQxNDkzIDkuOTkxMzIgNC43NjU2MiAxMS42NDA2QzMuMTE2MzIgMTMuMjg5OSAyLjI5MTY3IDE1LjMxMjUgMi4yOTE2NyAxNy43MDgzQzIuMjkxNjcgMjAuMTA0MiAzLjExNjMyIDIyLjEyNjcgNC43NjU2MiAyMy43NzZDNi40MTQ5MyAyNS40MjUzIDguNDAyNzggMjYuMjUgMTAuNzI5MiAyNi4yNVpNMjQuNjg3NSAyNy4yOTE3TDI1LjgzMzMgMjYuMTk3OUMyNS4zNDcyIDI1LjYwNzYgMjQuOTA0NSAyNS4wMzQ3IDI0LjUwNTIgMjQuNDc5MkMyNC4xMDU5IDIzLjkyMzYgMjMuNzE1MyAyMy4zMzMzIDIzLjMzMzMgMjIuNzA4M0wyNC42ODc1IDI3LjI5MTdaTTI3LjI5MTcgMjQuNjM1NEMyOC4yNjM5IDIzLjQ4OTYgMjkuMDAxNyAyMi4zOTU4IDI5LjUwNTIgMjEuMzU0MkMzMC4wMDg3IDIwLjMxMjUgMzAuMzQ3MiAxOS40OTY1IDMwLjUyMDggMTguOTA2MkgyMi4yMzk2TDIyLjg2NDYgMjEuMDkzOEgyNC45NDc5QzI1LjIyNTcgMjEuNjE0NiAyNS41NTU2IDIyLjE3ODggMjUuOTM3NSAyMi43ODY1QzI2LjMxOTQgMjMuMzk0MSAyNi43NzA4IDI0LjAxMDQgMjcuMjkxNyAyNC42MzU0Wk0yMi45MTY3IDM5LjU4MzNIMzcuNUMzOC4xMjUgMzkuNTgzMyAzOC42Mjg1IDM5LjM4MzcgMzkuMDEwNCAzOC45ODQ0QzM5LjM5MjQgMzguNTg1MSAzOS41ODMzIDM4LjA5MDMgMzkuNTgzMyAzNy41VjEwLjQxNjdDMzkuNTgzMyA5Ljc5MTY3IDM5LjM5MjQgOS4yODgxOSAzOS4wMTA0IDguOTA2MjVDMzguNjI4NSA4LjUyNDMxIDM4LjEyNSA4LjMzMzMzIDM3LjUgOC4zMzMzM0gxOS4xMTQ2TDIxLjU2MjUgMTYuNzcwOEgyNS42NzcxVjE0LjU4MzNIMjcuODEyNVYxNi43NzA4SDM1LjQxNjdWMTguOTA2MkgzMi43NjA0QzMyLjQxMzIgMjAuMjI1NyAzMS44OTI0IDIxLjUxMDQgMzEuMTk3OSAyMi43NjA0QzMwLjUwMzUgMjQuMDEwNCAyOS42ODc1IDI1LjE3MzYgMjguNzUgMjYuMjVMMzQuNDI3MSAzMS44MjI5TDMyLjkxNjcgMzMuMzMzM0wyNy4yOTE3IDI3LjcwODNMMjUuNDE2NyAyOS42MzU0TDI3LjA4MzMgMzUuNDE2N0wyMi45MTY3IDM5LjU4MzNaIiBmaWxsPSIjMUQxQjIwIi8+Cjwvc3ZnPgo=" width="41" height="41" style="width: 41.666672px; left: 4.166667px; top: 4.166667px; position: absolute;">
               </div>
             </div>
-          </div>
+          </a>
           <!-- أيقونة القائمة (يمين) -->
           <div style="width: 77px; height: 86px; position: absolute; left: 316px; top: 0px; background: rgb(242, 253, 252); border-radius: 20px 0px 0px 20px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);">
             <div style="width: 50px; height: 50px; position: absolute; left: 7px; top: 18px;">
@@ -185,7 +183,8 @@
             </div>
           </div>
         </div>
-        <div style="width: 393px; height: 256px; position: absolute; left: 0px; top: 228.5px;">
+        <!-- نص White Rose -->
+        <div style="width: 393px; height: 256px; position: absolute; left: 0px; top: 228.5px; z-index: 2;">
           <div style="width: 214px; height: 256px; position: absolute; left: 89.5px; top: 0px;">
             <div style="width: 214px; height: 106px; position: absolute; left: 0px; top: 75px;">
               <div style="position: absolute; left: 56px; top: 0px; text-align: right; vertical-align: top; display: flex; flex-direction: column; justify-content: flex-start;">
@@ -197,7 +196,9 @@
             </div>
           </div>
         </div>
-        <div style="width: 393px; height: 239px; position: absolute; left: 0px; top: 627px;">
+        <!-- القسم السفلي (قبل الفوتر) -->
+        <div style="width: 393px; height: 239px; position: absolute; left: 0px; top: 627px; z-index: 2;">
+          <!-- زر واتساب -->
           <div style="width: 185px; height: 53px; position: absolute; left: 104px; top: 0px; background: rgb(42, 230, 136); border-radius: 23px;">
             <div style="width: 30px; height: 30px; position: absolute; left: 38.5px; top: 11.5px;">
               <div style="width: 33px; height: 29.333332px; position: absolute; left: -11px; top: 0.333334px;">
@@ -215,12 +216,11 @@
               </div>
             </div>
           </div>
+          <!-- القسم الزجاجي -->
           <div style="width: 393px; height: 130px; position: absolute; left: 50%; transform: translateX(-50%); top: 109px; background: rgba(202, 145, 139, 0.2); backdrop-filter: blur(12px) brightness(1.1); -webkit-backdrop-filter: blur(12px) brightness(1.1); box-shadow: inset 0 0 20px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1); border-radius: 2px; overflow: hidden; box-sizing: border-box;">
-            <!-- العنوان الرئيسي -->
             <div style="position: absolute; left: 0; width: 100%; top: 15px; text-align: center; padding: 0 10px; box-sizing: border-box;">
                 <p><span style="font-size: 15px; font-weight: 700; font-family: 'inria serif'; color: rgb(30,30,30);">EXPAND YOUR IMAGINATION !!</span></p>
             </div>
-            <!-- النص الطويل (ثلاثة أسطر) -->
             <div style="position: absolute; left: 0; width: 100%; top: 45px; text-align: center; padding: 0 10px; box-sizing: border-box;">
                 <p style="margin: 0; padding: 0; line-height: 0.5; margin-bottom: 4px;">
                     <span style="font-size: 12px; font-weight: 400; font-family: 'inria serif'; color: rgb(30,30,30);">we have specialized</span>
@@ -232,13 +232,13 @@
                     <span style="font-size: 12px; font-weight: 400; font-family: 'inria serif'; color: rgb(30,30,30);">evening events, and little celebrations</span>
                 </p>
             </div>
-            <!-- التذييل (باللون الأحمر) -->
             <div style="position: absolute; left: 0; width: 100%; top: 100px; text-align: center; padding: 0 10px; box-sizing: border-box;">
                 <p><span style="font-size: 11px; font-weight: 700; font-family: 'inria serif'; color: rgb(244,5,72);">TAILORING STUDIO - EST. 2017</span></p>
             </div>
           </div>
         </div>
       </div>
+      <!-- الفوتر (بدون تغيير) -->
       <div style="width: 393px; height: 319px; position: absolute; left: 0px; top: 866px; background: rgb(188, 177, 180); overflow: hidden;">
         <div style="width: 373px; height: 80px; position: absolute; left: 10px; top: 19px;">
           <div style="width: 64px; height: 24px; position: absolute; left: 297px; top: 28px;">
@@ -300,31 +300,7 @@
     </div>
   </div>
 
-  <!-- سكربت الترجمة -->
-  <script>
-  // تعريف اللغة الحالية
-  let currentLanguage = 'en';
-
-  // دالة تبديل اللغة (تُستدعى من الزر)
-  window.toggleLanguage = function() {
-    console.log('✅ تم النقر على زر الترجمة');
-    if (currentLanguage === 'en') {
-      setLanguage('ar');
-    } else {
-      setLanguage('en');
-    }
-  };
-
-  // دالة تطبيق اللغة
-  function setLanguage(lang) {
-    console.log('🔄 تغيير اللغة إلى: ' + lang);
-    currentLanguage = lang;
-    document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-    document.documentElement.setAttribute('lang', lang);
-    // هنا يمكنك إضافة تحديث النصوص لاحقاً
-  }
-</script>
-
+  <!-- سكربت resizePage فقط (بدون أي سكربت ترجمة) -->
   <script>
     const page = {
       width: 393,
@@ -357,16 +333,6 @@
       throttle("resize", "optimizedResize");
     })();
     window.addEventListener("optimizedResize", resizePage);
-  </script><script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // ابحث عن أيقونة الترجمة وأضف لها مستمع حدث
-    var translationIcon = document.querySelector('[onclick*="toggleLanguage"]');
-    if (translationIcon) {
-      console.log('✅ تم العثور على أيقونة الترجمة');
-    } else {
-      console.log('❌ لم يتم العثور على أيقونة الترجمة');
-    }
-  });
-</script>
+  </script>
 </body>
 </html>
